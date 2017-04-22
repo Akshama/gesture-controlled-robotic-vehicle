@@ -51,7 +51,8 @@ $stmt->execute();
 $con->close();
 //printf("%d Row inserted.\n", $stmt->affected_rows);
 $stmt->close();
-
+session_start();
+$_SESSION['user_id']=$user_id;
 
 ?> 
 		<html>
