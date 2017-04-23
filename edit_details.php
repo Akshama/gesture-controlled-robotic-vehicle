@@ -1,3 +1,4 @@
+
 <?php
 		
 
@@ -66,7 +67,7 @@
 						<tbody>
 							<tr>
 								<th>Name of Applicant</th>
-								<td><input type="text" name="name" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" value=<?php echo$user_name;?> readonly></td>
+								<td><input type="text" name="name" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" value=<?php echo$user_name;?> ></td>
 							</tr>
 
 							<tr>
@@ -76,10 +77,10 @@
 										if($gender == 'M')
 										{
 								?>
-											<input type="radio" name="gender" id="gender" checked="checked" value="Male" readonly> Male &nbsp&nbsp
-									<input type="radio" name="gender" id="gender" value="Female" readonly> Female &nbsp&nbsp
+											<input type="radio" name="gender" id="gender" checked="checked" value="Male"> Male &nbsp&nbsp
+									<input type="radio" name="gender" id="gender" value="Female"> Female &nbsp&nbsp
 									
-									<input type="radio" name="gender" id="gender" value="Third Gender" readonly> Third Gender
+									<input type="radio" name="gender" id="gender" value="Third Gender"> Third Gender
 								</td>
 								<?php 
 									}
@@ -87,20 +88,20 @@
 										{
 								?>
 
-											<input type="radio" name="gender" id="gender"  value="Male" readonly> Male &nbsp&nbsp
-									<input type="radio" name="gender" id="gender" checked="checked" value="Female" readonly> Female &nbsp&nbsp
+											<input type="radio" name="gender" id="gender"  value="Male"> Male &nbsp&nbsp
+									<input type="radio" name="gender" id="gender" checked="checked" value="Female"> Female &nbsp&nbsp
 									
-									<input type="radio" name="gender" id="gender" value="Third Gender" readonly> Third Gender
+									<input type="radio" name="gender" id="gender" value="Third Gender"> Third Gender
 								</td>
 								<?php
 									}
 									else if($gender == 'T')
 										{
 								?>
-											<input type="radio" name="gender" id="gender"  value="Male" > Male &nbsp&nbsp
+											<input type="radio" name="gender" id="gender"  value="Male"> Male &nbsp&nbsp
 									<input type="radio" name="gender" id="gender" value="Female"> Female &nbsp&nbsp
 									
-									<input type="radio" name="gender" id="gender" checked="checked" value="Third Gender" > Third Gender
+									<input type="radio" name="gender" id="gender" checked="checked" value="Third Gender"> Third Gender
 								</td>
 								<?php 
 									}
@@ -110,12 +111,12 @@
 
 							<tr>
 								<th> Address</th>
-								<td><textarea type="text" name="address" id="address1" rows="3" columns="6" style="width:280px; resize:none;" readonly ><?php echo $address; ?></textarea > </td>
+								<td><textarea type="text" name="address" id="address1" rows="3" columns="6" style="width:280px; resize:none;" ><?php echo $address; ?></textarea> </td>
 							</tr>
 
 							<tr>
 								<th>Pin code</th>
-								<td><input type="text" pattern="^\d{6}$" name="pc" minlength="6" maxlength="6" value=<?php echo$pin_code;?> readonly></td>
+								<td><input type="text" pattern="^\d{6}$" name="pc" minlength="6" maxlength="6" value=<?php echo$pin_code;?>></td>
 							</tr>
 						</tbody>
 						</table>
@@ -123,9 +124,9 @@
 						</form>
 						<form action="read_emergency_contact_details.php" method ="post">
 									
-							<input type="hidden"  name="user_id" value ='<?php  echo $user_id?>' readonly/> 
+							<input type="hidden"  name="user_id" value ='<?php  echo $user_id?>' /> 
 																				
-							<input type="submit" height= "500px"  value="View Emergency contacts" readonly/> 
+							<input type="submit" height= "500px"  value="Edit Emergency contacts"/> 
 						
 						</form>
 			</div>
