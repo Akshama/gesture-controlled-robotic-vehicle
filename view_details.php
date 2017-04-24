@@ -52,16 +52,27 @@
 		<head>
 			<title>Login </title>
 			<meta charset="utf-8">
-			<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-			<script src="../bootstrap/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+			<script src="bootstrap/js/bootstrap.min.js"></script>
 			<link rel=stylesheet href='css/a.css'>
-		</head>
+		<style type="text/css">
+	body 
+   	{
+   		background: -webkit-linear-gradient(315deg, #0e7fef 0%, #00a7c9 44%, #00d3a2 100%), -webkit-linear-gradient(45deg, #f20e6d 0%, rgba(242, 14, 109, 0.93) 7%, rgba(0, 211, 162, 0) 100%);
+  background: linear-gradient(135deg, #0e7fef 0%, #00a7c9 44%, #00d3a2 100%), linear-gradient(45deg, #f20e6d 0%, rgba(242, 14, 109, 0.93) 7%, rgba(0, 211, 162, 0) 100%);
+
+   	}
+</style>	</head>
 
 		<body>
 			<div class="container">
 				<center><h2>Existing User</h2></center>
 				<center><h4><strong>Personal Details of User:</strong></h4>
-				<form action="enter_contacts.php" method="post" class="form-horizontal" name="add_rti" role="form">
+				<form action="read_emergency_contact_details.php" method="post" class="form-horizontal" name="view_details" role="form">
+					<input type="hidden"  name="user_id" value ='<?php  echo $user_id?>' readonly/> 
+        
+        	<input type="hidden"  name="user_name" value ='<?php  echo $_POST['user_name']?>' /> 
+        	<input type="hidden" name="password" value ='<?php  echo $_POST['password']?>'/> 
 					<table class="table table-bordered">
 						<tbody>
 							<tr>
@@ -120,12 +131,7 @@
 						</tbody>
 						</table>
 						<br><br>
-						</form>
-						<form action="read_emergency_contact_details.php" method ="post">
-									
-							<input type="hidden"  name="user_id" value ='<?php  echo $user_id?>' readonly/> 
-																				
-							<input type="submit" height= "500px"  value="View Emergency contacts" readonly/> 
+						<input type="submit" height= "500px" class="btn btn-primary" value="View Emergency contacts" readonly/> 
 						
 						</form>
 			</div>

@@ -14,6 +14,12 @@
         <link rel="stylesheet" href="css/style1.css">
 
     <style>
+    body 
+    {
+      background: -webkit-linear-gradient(315deg, #0e7fef 0%, #00a7c9 44%, #00d3a2 100%), -webkit-linear-gradient(45deg, #f20e6d 0%, rgba(242, 14, 109, 0.93) 7%, rgba(0, 211, 162, 0) 100%);
+  background: linear-gradient(135deg, #0e7fef 0%, #00a7c9 44%, #00d3a2 100%), linear-gradient(45deg, #f20e6d 0%, rgba(242, 14, 109, 0.93) 7%, rgba(0, 211, 162, 0) 100%);
+
+    }
     .btn-btn-primary{
       font-family: "serif";
 
@@ -67,17 +73,7 @@
         <input type="submit" height= "500px" class='btn-btn-primary' value="Edit Details"/> 
          <br><br> 
   </form>
-             
-   <form action="View_current_location.php" method ="post">
-        
-        
-        <input type="hidden"  name="user_name" value ='<?php  echo $_POST['user_name']?>' /> 
-        <input type="hidden" name="password" value ='<?php  echo $_POST['password']?>'/> 
-           
-        <input type="submit" height= "500px" class='btn-btn-primary' value="Current location"/> 
-          
-  </form>
-    
+              
  <br><br> 
 <form action="index.php" method ="post">
         

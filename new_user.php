@@ -2,9 +2,17 @@
 		<head>
 			<title>Sign up</title>
 			<meta charset="utf-8">
-			<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-			<script src="../bootstrap/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+			<script src="bootstrap/js/bootstrap.min.js"></script>
 			<link rel=stylesheet href='css/a.css'>
+					<style type="text/css">
+	body 
+   	{
+   		background: -webkit-linear-gradient(315deg, #0e7fef 0%, #00a7c9 44%, #00d3a2 100%), -webkit-linear-gradient(45deg, #f20e6d 0%, rgba(242, 14, 109, 0.93) 7%, rgba(0, 211, 162, 0) 100%);
+  background: linear-gradient(135deg, #0e7fef 0%, #00a7c9 44%, #00d3a2 100%), linear-gradient(45deg, #f20e6d 0%, rgba(242, 14, 109, 0.93) 7%, rgba(0, 211, 162, 0) 100%);
+
+   	}
+</style>
 		</head>
 
 		<body>
